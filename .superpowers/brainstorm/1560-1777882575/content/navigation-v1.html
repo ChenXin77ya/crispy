@@ -1,0 +1,78 @@
+<h2>MVP 导航结构选型</h2>
+<p class="subtitle">基于设计方案 v1.3：优先完成 Android 体验，并为后端 API 预留对接点</p>
+
+<div class="section">
+  <div class="label">MVP 核心入口</div>
+  <p>首页、市场、交易/持仓、新闻、我的（资产/信用/设置）</p>
+</div>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>底部 Tab（5 栏）</h3>
+      <p>Home / Market / Trade / News / Me</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>优点</h4>
+          <ul>
+            <li>Android 上手最快</li>
+            <li>主流程触达成本低</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>注意</h4>
+          <ul>
+            <li>二级页面跳转层级要控制</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>侧边栏（偏 Web/宽屏）</h3>
+      <p>左侧主导航 + 右侧内容区</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>优点</h4>
+          <ul>
+            <li>信息密度更高</li>
+            <li>更适合后台/管理视图</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>注意</h4>
+          <ul>
+            <li>移动端需要折叠/抽屉适配</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>混合：底部 Tab + “更多”聚合</h3>
+      <p>Home / Market / Trade / News + More（资产/银行/IPO/信用）</p>
+      <div class="pros-cons">
+        <div class="pros">
+          <h4>优点</h4>
+          <ul>
+            <li>主流程更聚焦</li>
+            <li>扩展模块不挤占主导航</li>
+          </ul>
+        </div>
+        <div class="cons">
+          <h4>注意</h4>
+          <ul>
+            <li>需要定义“更多”内的信息架构</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

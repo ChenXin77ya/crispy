@@ -4,12 +4,12 @@
 
 ## 使用方式
 
-1. 把整个 `可复刻_UI布局_Dashboard/` 复制到你的 Flutter 工程（推荐放到：`lib/shared/components/dashboard_layout/` 或 `lib/features/home/presentation/widgets/`）。
-2. 在工程里引入并打开页面：
+1. 把本文件夹里的 `lib/` 内容复制到你的 Flutter 工程中（推荐目标：`lib/shared/components/dashboard_layout/`）。
+2. 在工程里引入并打开页面（按你的工程目录调整 import 路径）：
 
 ```dart
 import 'package:flutter/material.dart';
-import 'dashboard_layout.dart';
+import 'shared/components/dashboard_layout/dashboard_layout.dart';
 
 class DashboardDemoPage extends StatelessWidget {
   const DashboardDemoPage({super.key});
@@ -27,4 +27,3 @@ class DashboardDemoPage extends StatelessWidget {
 - 窄屏：右侧信息栏下移到主内容下方，左侧导航变为抽屉
 
 你可以在 `dashboard_layout.dart` 里调整 `breakpointWide` 来匹配项目的 Web/Pad 断点。
-
